@@ -1,7 +1,11 @@
 package stream
 
+import (
+    "context"
+)
+
 type Router interface {
-	StartStream(s *Stream) error
-	AddStreamBlock(b *StreamBlock) error
-	SubscribeStream(conf *StreamConfig) error
+	StartStream(context.Context, *Stream) error
+	AddStreamBlock(context.Context, *StreamBlock) error
+	SubscribeStream(context.Context, *StreamConfig) error
 }

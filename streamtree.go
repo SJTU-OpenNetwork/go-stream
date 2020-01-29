@@ -1,6 +1,7 @@
 package stream
 
 import (
+    "context"
 	"github.com/ipfs/go-blocks/blockservice"
 )
 
@@ -8,12 +9,12 @@ type StreamTree struct {
 	bsrv blockservice.BlockService
 }
 
-func (st *StreamTree) StartStream(s *Stream) error {
+func (st *StreamTree) StartStream(ctx context.Context, s *Stream) error {
     return nil
 }
-func (st *StreamTree) AddStreamBlock(b *StreamBlock) error {
+func (st *StreamTree) AddStreamBlock(ctx context.Context, b *StreamBlock) error {
     return nil
 }
-func (st *StreamTree) SubscribeStream(conf *StreamConfig) error {
+func (st *StreamTree) SubscribeStream(ctx context.Context, conf *StreamConfig) error {
     return nil
 }
