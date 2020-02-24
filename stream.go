@@ -14,7 +14,7 @@ type Stream interface {
 }
 
 type StreamBlock struct {
-	StreamID uint64
+	StreamID string
 	BlockID  cid.Cid
 }
 
