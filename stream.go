@@ -27,12 +27,12 @@ type blocklist struct {
 }
 
 type StreamConfig struct {
-	StreamID uint64
+	StreamID string
 	Nsubstreams int
 }
 
 type SubStreamConfig struct {
-	ID         uint64
+	ID         string
 	StreamMap  uint64 // 0010 means need only the second sub-stream
 	StartIndex int    // only download blocks after StartIndex
 }
