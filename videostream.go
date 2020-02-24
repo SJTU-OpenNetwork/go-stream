@@ -8,7 +8,7 @@ ipld "github.com/ipfs/go-ipld-format"
  * VideoStream is one implementation of stream for videos.
  */
 type VideoStream struct {
-	ID          uint64  // hash value of the stream
+	ID          string  // hash value of the stream
 	//Rate        float32 // in Kbps
 	Nsubstreams int     // number of substreams
 	blocklist   *blocklist	//Used to store blocks
